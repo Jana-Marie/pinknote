@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+    <link rel="icon" type="image/png" href="{{ favicon }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ description }}">
+    <meta name="keywords" content="{{ keywords }}">
+    <meta name="author" content="{{ author }}">
+    <!-- CSS Includes -->
+    <style>
+      {{ css|safe }}
+    </style>
+  </head>
+  <body>
+    <!-- Main Body -->
+      {{ md|safe }}
+    <!-- Light-Dark mode switch -->
+    <div class="ld-switch">
+      <label for="checkbox"></label>
+      <input type="checkbox" class="dark-mode" checked id="checkbox" />
+      <div class="moon"></div>
+    </div>
+    <!-- JS Includes -->
+    <script type="text/javascript">
+      {{ js|safe }}
+    </script>
+  </body>
+</html>
