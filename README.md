@@ -34,12 +34,12 @@ To choose a different theme, a different CSS file you can use the option `-css s
     <th style="text-align:center;vertical-align:top" colspan="2"><a href="https://mint.pinknote.janamarie.dev"><h5>mint</h5></a></th>
   </tr>
   <tr>
-    <td style="width:16.66%;"><img src="assets/clean-l.png"/></td>
-    <td style="width:16.66%;"><img src="assets/clean-d.png"/></td>
-    <td style="width:16.66%;"><img src="assets/pinknote-l.png"/></td>
-    <td style="width:16.66%;"><img src="assets/pinknote-d.png"/></td>
-    <td style="width:16.66%;"><img src="assets/mint-l.png"/></td>
-    <td style="width:16.66%;"><img src="assets/mint-d.png"/></td>
+    <td style="width:16.66%;"><img src="static/assets/clean-l.png"/></td>
+    <td style="width:16.66%;"><img src="static/assets/clean-d.png"/></td>
+    <td style="width:16.66%;"><img src="static/assets/pinknote-l.png"/></td>
+    <td style="width:16.66%;"><img src="static/assets/pinknote-d.png"/></td>
+    <td style="width:16.66%;"><img src="static/assets/mint-l.png"/></td>
+    <td style="width:16.66%;"><img src="static/assets/mint-d.png"/></td>
   </tr>
   <tr>
     <td style="text-align:center;vertical-align:bottom;text-style:block;" colspan="2">--css static/css/clean.css</td>
@@ -52,12 +52,12 @@ To choose a different theme, a different CSS file you can use the option `-css s
     <th style="text-align:center;vertical-align:top" colspan="2"><a href="https://banana.pinknote.janamarie.dev"><h5>banana</h5></a></th>
   </tr>
   <tr>
-    <td style="width:16.66%;"><img src="assets/sunset-l.png"></td>
-    <td style="width:16.66%;"><img src="assets/sunset-d.png"></td>
-    <td style="width:16.66%;"><img src="assets/code-l.png"></td>
-    <td style="width:16.66%;"><img src="assets/code-d.png"></td>
-    <td style="width:16.66%;"><img src="assets/banana-l.png"></td>
-    <td style="width:16.66%;"><img src="assets/banana-d.png"></td>
+    <td style="width:16.66%;"><img src="static/assets/sunset-l.png"></td>
+    <td style="width:16.66%;"><img src="static/assets/sunset-d.png"></td>
+    <td style="width:16.66%;"><img src="static/assets/code-l.png"></td>
+    <td style="width:16.66%;"><img src="static/assets/code-d.png"></td>
+    <td style="width:16.66%;"><img src="static/assets/banana-l.png"></td>
+    <td style="width:16.66%;"><img src="static/assets/banana-d.png"></td>
   </tr>
   <tr>
     <td style="text-align:center;vertical-align:bottom;text-style:block;" colspan="2">--css static/css/sunset.css</td>
