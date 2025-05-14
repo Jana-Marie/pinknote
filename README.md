@@ -85,5 +85,5 @@ I would love to see more themes contributed! :3
 
 ## Todo
 
- - [ ] Set proper website title and meta var
+ - [x] Set proper website title and meta var
  - [ ] Make JS package optional
