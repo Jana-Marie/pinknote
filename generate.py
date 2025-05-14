@@ -13,10 +13,14 @@ def render_markdown_to_html(source, template, css, js, favicon, assets, target):
   with open(str(target) + '/index.html', 'w') as f:
     f.write(
       templateFile.render( \
-        md=markdown2.markdown(source.read(), extras=["fenced-code-blocks"]),
+        md=markdown2.markdown(source.read(), extras=['fenced-code-blocks']),
         css=css.read(),
         js=js.read(),
-        favicon=base64.b64encode(favicon.read()).decode('ascii')
+        favicon=base64.b64encode(favicon.read()).decode('ascii'),
+        title='pinknote',
+        description='',
+        keywords='',
+        author=''
       )
     )
     f.close()
