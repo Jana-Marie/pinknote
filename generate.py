@@ -4,7 +4,7 @@ import markdown2, base64
 import shutil
 from jinja2 import Environment, FileSystemLoader
 
-def render_markdown_to_html(source, template, css, js, favicon, assets, target):
+def render_markdown_to_html(source, template, css, js, favicon, assets, title, description, keywords, authors, target):
   pathlib.Path(target).mkdir(parents=True, exist_ok=True)
 
   templateEnv = Environment(loader=FileSystemLoader(''))
@@ -17,10 +17,10 @@ def render_markdown_to_html(source, template, css, js, favicon, assets, target):
         css=css.read(),
         js=js.read(),
         favicon=base64.b64encode(favicon.read()).decode('ascii'),
-        title='pinknote',
-        description='',
-        keywords='',
-        author=''
+        title=title,
+        description=description,
+        keywords=keywords,
+        author=authors
       )
     )
     f.close()
@@ -42,8 +42,26 @@ if __name__ == '__main__':
       default='static/assets/', help='Assets to copy to target (default: static/assets]')
   parser.add_argument('-o', '--output-path', type=pathlib.Path, nargs='?', 
       default='www', help='Output path [default: static/assets/favicon.png]')
+  parser.add_argument('-ti', '--title', type=str, nargs='?', 
+      default='pinknote', help='Title [default: pinknote]')
+  parser.add_argument('-d', '--description', type=str, nargs='?', 
+      default='', help='HTML metadata description [default: None]')
+  parser.add_argument('-k', '--keywords', type=str, nargs='?', 
+      default='', help='HTML metadata keywords [default: None]')
+  parser.add_argument('-au', '--authors', type=str, nargs='?', 
+      default='', help='HTML metadata authors [default: None]')
   parser.add_argument('source', type=argparse.FileType('r'), help='Markdown file to process')
 
   args = parser.parse_args()
 
-  render_markdown_to_html(args.source, args.template, args.css, args.js, args.favicon, args.assets, args.output_path)
+  render_markdown_to_html(args.source,
+      args.template,
+      args.css,
+      args.js,
+      args.favicon,
+      args.assets,
+      args.title,
+      args.description,
+      args.keywords,
+      args.authors,
+      args.output_path)
