@@ -78,7 +78,7 @@ I would love to see more themes contributed! :3
       assets/       - Put your assets in here
       css/          - Themes, stylesheets
       index.js      - The light-dark theme selector, put your additional JS in here
-    temlates/       - index.html template
+    templates/      - index.html template
   generate.py       - The generator itself, run this to render your Markdown file
   README.md         - This file
 ```
