@@ -31,7 +31,7 @@ To choose a different theme, a different CSS file you can use the option `-css s
   <tr style="">
     <th style="text-align:center;vertical-align:top" colspan="2"><a href="https://clean.pinknote.janamarie.dev"><h5>clean</h5></a></th>
     <th style="text-align:center;vertical-align:top" colspan="2"><a href="https://pinknote.pinknote.janamarie.dev"><h5>pinknote</h5></a></th>
-    <th style="text-align:center;vertical-align:top" colspan="2"><a href="https://mint.janamarie.dev"><h5>mint</h5></a></th>
+    <th style="text-align:center;vertical-align:top" colspan="2"><a href="https://mint.pinknote.janamarie.dev"><h5>mint</h5></a></th>
   </tr>
   <tr>
     <td style="width:16.66%;"><img src="assets/clean-l.png"/></td>
